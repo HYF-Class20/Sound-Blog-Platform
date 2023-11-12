@@ -32,7 +32,6 @@
 
 - [ ] There should be a navigation bar with the links to different parts of
       website at left side of the website.
-- [ ]
 
 ### Site Navigation JSX
 
@@ -133,7 +132,7 @@
 - [ ] This component will stick at the bottom of this website.
 - [ ] The player should contain a `play-button`, a `next-button` and a `previous-button`.
 - [ ] User should be able to see the `progress` of current sound.
-- [ ] There should be an `volumn-button` to control volumns.
+- [ ] <span style="color:blue">Optional</span>: There could be an `volumn-button` to control volumns.
 
 ### Player CSS
 
