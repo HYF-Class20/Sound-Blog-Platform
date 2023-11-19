@@ -1,0 +1,30 @@
+/* .box-container{
+    
+    height: 80%;
+    width: 20%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+} */
+.box-container {
+    height: 80%;
+    width: 20%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px black solid;
+    max-height: 80%;
+  }
+  
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Use 'cover' to ensure the image covers the entire container */
+    border-radius: 20px;
+  }
+
+  

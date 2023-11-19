@@ -1,0 +1,28 @@
+.category-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px rgba(42, 228, 241, 0.833) solid;
+    border-radius: 20px;
+    height: 17vw;
+    width: 70vw;
+    
+}
+.top-category{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+p{
+    margin-left:2vw;
+    font-size: 1.3vw;
+}
+button{
+    margin-top: 2vw;
+    margin-right:2vw;
+}
+.bottom-category{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:flex-end;
+}
