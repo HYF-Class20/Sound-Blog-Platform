@@ -8,7 +8,7 @@
 Introducing "SoundBlog", a microblogging platform that allows users to record and share sound snippets. User can send/share sound messages. User can record and use pre-recorded messages.User can also use sounds file.It's all about sharing experiences and moments in pure audio form.
 
 
-![Alt text](assets/sound.png)
+![Alt text](assets/logo.png)
 
 ## Features
 
