@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px; 
-    background-color: white;
+    margin-top: 40px; 
+    background-color: #E4EEFA;
+    width: 100%;
   }
   
   .search-bar {
@@ -13,7 +14,11 @@
     width: 400px;
     box-sizing: border-box;
     outline: none;
+    background-color: white;
+    height: 25%
   }
+
+ 
   
   
   .input input::placeholder {
