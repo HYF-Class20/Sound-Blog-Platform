@@ -10,7 +10,7 @@ const Box = (props) =>{
     return (
         <>
         <div className="box-container" >
-        <img src={props.imageSrc} alt="Pictures" onClick={props.onClick} />
+        <img className='box-img' src={props.imageSrc} alt="Pictures" onClick={props.onClick} />
         </div> 
         </>
     )

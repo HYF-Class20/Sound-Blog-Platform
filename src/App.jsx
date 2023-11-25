@@ -1,12 +1,12 @@
+import React from "react";
+import NavigationBar from "./components/NavigationBar/NavigationBar";
 import Category from '../Component/Category/Category';
+import './App.css'
+function App(){
+    return <div className="main-container">
 
-const App = ()=>{
-     return (
-      <>
-      <Category />
-      
-      </>
-     )
+        <NavigationBar></NavigationBar>
+        <Category />
+    </div>
 }
-
-export default App;
+export default App
