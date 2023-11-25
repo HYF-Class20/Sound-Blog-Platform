@@ -1,0 +1,26 @@
+.Sounds {
+  font-family: Monstserrat, serif;
+  color: #16139b;
+  position: absolute;
+  top: 0.9rem;
+  left: 2.9rem;
+}
+
+.title {
+  font-family: Monstserrat, serif;
+  color: #16139b;
+  font-weight: 600;
+  size: 14px;
+  position: relative;
+  left: 4.9rem;
+  top: -1.3rem;
+}
+Span {
+  font-family: Monstserrat, serif;
+  color: #16139b;
+  size: 14px;
+  padding: 1px;
+  position: relative;
+  left: 4.9rem;
+  top: -2.3rem;
+}
