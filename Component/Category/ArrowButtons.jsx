@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import './ArrowButtons.css';
 
 const ArrowButtons = ({onArrowClick}) => {
   return (
         <div>
-          <button className="arrow-button" onClick={() => onArrowClick('left')}>Left</button>
-          <button className="arrow-button right-arrow" onClick={() => onArrowClick('right')}>Right</button>
+          <button className="arrow left" onClick={() => onArrowClick('left')}></button>
+          <button className="arrow right" onClick={() => onArrowClick('right')}></button>
         </div>
       );
     };
