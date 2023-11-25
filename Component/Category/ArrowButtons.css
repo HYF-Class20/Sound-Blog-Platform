@@ -1,0 +1,18 @@
+.arrow {
+  border: solid;
+  border-color: #16139B;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  box-shadow: none;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}

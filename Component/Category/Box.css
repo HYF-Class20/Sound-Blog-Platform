@@ -1,0 +1,22 @@
+
+.box-container {
+    height: 80%;
+    width: 20%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    max-height: 80%;
+  }
+  
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    border-radius: 20px;
+  }
+
+  img:hover {
+    transform: scale(1.2); 
+  }
+
+  
