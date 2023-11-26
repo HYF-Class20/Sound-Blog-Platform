@@ -2,7 +2,7 @@ import { useState } from 'react';
 import ArrowButtons from './ArrowButtons';
 import Box from './Box';
 import './Category.css';
-// import useAudioData from './useAudioData';
+
  
 const Category = (records,setTracks) => {
 
@@ -17,7 +17,7 @@ const Category = (records,setTracks) => {
     const [startImage, setStartImage] = useState(0);
     const [selectedImage, setSelectedImage] = useState(null);
     const totalImages = 8; 
-    // const {audioData}=useAudioData();
+    
     
     
     const images = [
