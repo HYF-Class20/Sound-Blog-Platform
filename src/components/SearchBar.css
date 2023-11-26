@@ -1,26 +1,44 @@
 .input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px; 
-    background-color: #E4EEFA;
-    width: 100%;
-  }
-  
-  .search-bar {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 20px; 
-    width: 400px;
-    box-sizing: border-box;
-    outline: none;
-    background-color: white;
-    height: 25%
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  background-color: #e4eefa;
+  width: 100%;
+}
 
- 
-  
-  
-  .input input::placeholder {
-    color: #999;
-  }
+.search-bar {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 400px;
+  box-sizing: border-box;
+  outline: none;
+  background-color: white;
+  height: 30px; 
+}
+
+.input input::placeholder {
+  color: #999;
+}
+
+.audio-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.audio-container h2 {
+  font-size: 10px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.audio-container h3 {
+  font-size: 10px;
+  color: #666;
+}
