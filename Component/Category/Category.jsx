@@ -2,13 +2,22 @@ import { useState } from 'react';
 import ArrowButtons from './ArrowButtons';
 import Box from './Box';
 import './Category.css';
-
+// import useAudioData from './useAudioData';
  
-const Category = () => {
+const Category = (records,setTracks) => {
+
+  const filterTracks = (genre) => {
+    const filteredTracks = records.filter((record) => {
+      return record.genre === genre;
+    });
+    setTracks([...filteredTracks]);
+    return filteredTracks.length;
+  }; 
+
     const [startImage, setStartImage] = useState(0);
     const [selectedImage, setSelectedImage] = useState(null);
     const totalImages = 8; 
-    
+    // const {audioData}=useAudioData();
     
     
     const images = [
@@ -36,7 +45,10 @@ const Category = () => {
 
     const handleImageClick = (index) => {
       const displayedIndex = startImage + index;
-      setSelectedImage(images[displayedIndex]);
+      const x = filterTracks(images[displayedIndex].category);
+      if (x > 0) {
+        setSelectedImage(images[displayedIndex].src);
+      }
     };
   
     const handleBackClick = () => {
