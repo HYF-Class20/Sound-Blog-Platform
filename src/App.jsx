@@ -1,4 +1,4 @@
-import Category from '../Component/Category/Category';
+import Category from './component/Category/Category';
 
 
 
