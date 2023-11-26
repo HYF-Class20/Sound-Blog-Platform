@@ -31,19 +31,20 @@ const SearchBar = () => {
       className='search-bar'
       type='text'
       placeholder='search...'
-      onChange={(e) => setInput(e.target.value)}
+      onChange={(e) => {setInput(e.target.value)}}
     />
     {input.length > 0 && (
       <div>
         {soundList
           .filter((item) =>
             item.title.toLowerCase().includes(input.toLowerCase())
+
           )
           .map((item) => (
             <div className='audio-container' key={item.id}>
               <h2>{item.title}</h2>
               <h2>{item.genre}</h2>
-              <h3>{item.author}</h3>
+              <img src={item.thumbnail} alt={`${item.title} thumbnail`} />
             </div>
           ))}
       </div>
