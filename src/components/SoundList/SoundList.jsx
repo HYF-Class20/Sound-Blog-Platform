@@ -4,8 +4,9 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import { Container } from "react-bootstrap";
 import PropTypes from "prop-types";
-import backgroundImage from "../assets/share.svg";
-import "../SoundList/soundList.css";
+import backgroundImage from "/src/assets/share.svg";
+import "/src/components/SoundList/SoundList.css";
+
 
 export default function SoundList({ tracks, setTrack }) {
   return (
