@@ -4,19 +4,19 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import { Container } from "react-bootstrap";
 import PropTypes from "prop-types";
-import backgroundImage from "/src/assets/share.svg";
-import "/src/components/SoundList/SoundList.css";
-
+import backgroundImage from "../assets/share.svg";
+import "../styles/soundList.css";
 
 export default function SoundList({ tracks, setTrack }) {
   return (
     <Container
-      className="bg-white border rounded  position-absolute bg-opacity-25 d-flex p-5"
+      className="bg-white position-absolute bg-opacity-25 d-flex p-5"
       style={{
-        width: "50.80rem",
-        height: "52rem",
-        left: "36rem",
+        width: "57.6rem",
+       
+        left: "18rem",
         top: "15rem",
+
       }}
     >
       <h2 className="Sounds">Sounds</h2>
@@ -26,7 +26,7 @@ export default function SoundList({ tracks, setTrack }) {
         className="g-4"
         style={{
           width: "auto",
-          height: "20rem",
+          height: "15rem",
         }}
       >
         {tracks.map((item) => (
