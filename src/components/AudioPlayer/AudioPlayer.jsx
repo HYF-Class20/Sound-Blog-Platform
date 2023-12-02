@@ -1,14 +1,12 @@
 import { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
-import "../AudioPlayer/AudioPlayer.css";
-import BackwardIcon from "../src/assets/Backward.svg";
-import PlayIcon from "./src/assets/Play.svg";
-import PauseIcon from "../assets/Pause.svg";
-import ForwardIcon from "../assets/Forward.svg";
+import "/src/components/AudioPlayer/AudioPlayer.css";
+import BackwardIcon from "/src/assets/Backward.svg";
+import PlayIcon from "/src/assets/Play.svg";
+import PauseIcon from "/src/assets/Pause.svg";
+import ForwardIcon from "/src/assets/Forward.svg";
 
 export default function AudioPlayer({ track }) {
-  
-
   const { title, src, genre, thumbnail } = track ?? {
     title: "Please select a track",
     genre: "from the sound list...",
@@ -99,8 +97,8 @@ export default function AudioPlayer({ track }) {
         
       </div>
       <div className="player-contents-text">
-      <h2>{title}</h2>
-      <p>{genre}</p>
+      <h5>{title}</h5>
+      <p className='genre-player'>{genre}</p>
       </div>
       <audio
         ref={audioPlayer}

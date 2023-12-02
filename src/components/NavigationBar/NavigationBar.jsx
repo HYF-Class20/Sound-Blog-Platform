@@ -1,10 +1,10 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import addLogo from "../src/assets/add.svg";
-import homeLogo from "./src/assets/home.svg";
-import menuLogo from "./src/assets/logo.png";
-import "./NavigationBar.css";
+import addLogo from "/src/assets/add.svg";
+import homeLogo from "/src/assets/home.svg";
+import menuLogo from "/src/assets/sound_logo.png";
+import "/src/components/NavigationBar/NavigationBar.css";
 function NavigationBar() {
   return (
     <Navbar className="bg-body-tertiary" >

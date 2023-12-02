@@ -29,14 +29,27 @@ audio {
   
 }
 
+.genre-player{
+  position: absolute;
+  left: 6rem;
+  color: #16139B;
+  font-family: Montserrat;
 
-h2 {
-  font-weight: bold;
+}
+
+h5 {
+  font-size: 1.25rem;
+    left: 5.6rem;
+    position: absolute;
+    bottom: 2rem;
+    color: #16139B;
+    font-family: Montserrat;
+    font-weight: bold;
 }
 
 .forwardBackward img{
   height: 70px;
-  width: 70px;
+  width: 50px;
 }
 .forwardBackward {
   background: none;
@@ -69,7 +82,7 @@ h2 {
 
 .playPause img{
   width: 100px;
-  height: 100px;
+  height: 75px;
 }
 
 .currentTime,
