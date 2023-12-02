@@ -1,7 +1,10 @@
+
+
 .Sounds {
   font-family: Monstserrat, serif;
   color: #16139b;
   position: absolute;
+  font-weight: bold;
   top: 0.9rem;
   left: 3.9rem;
 }
@@ -12,9 +15,10 @@
   font-weight: 600;
   size: 14px;
   position: relative;
-  left: 3.4rem;
+  left: 5.4rem;
   top: -1.3rem;
 }
+
 Span {
   font-family: Monstserrat, serif;
   color: #16139b;
@@ -24,3 +28,11 @@ Span {
   left: 5.4rem;
   top: -2.3rem;
 }
+
+.bg-opacity-25 {
+  background-color: white !important;
+}
+
+  .bg-white{
+    border-radius: 20px;
+  }

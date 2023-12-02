@@ -1,22 +1,19 @@
-
 .box-container {
-    height: 80%;
-    width: 20%;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    overflow: hidden;
-    max-height: 80%;
-  }
-  
-  .box-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; 
-    border-radius: 20px;
-  }
+  height: 80%;
+  width: 20%;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  max-height: 80%;
+}
 
-  .box-img:hover {
-    transform: scale(1.2); 
-  }
+.bottom-category img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
 
-  
+.box-container img:hover {
+  transform: scale(1.2);
+}

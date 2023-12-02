@@ -1,0 +1,30 @@
+.input {
+  align-items: center;
+  position: absolute  ;
+  top:9px;
+  left: 290px;
+  color: #16139B99;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 128%;
+  
+}
+
+.search-bar {
+  width: 638px;
+  height: 44px;
+  border-radius: 20px;
+  border: 0px solid #7371C3;
+  background: #FFF;
+  color: #16139B99;
+  right:12px;
+  top: 200px;
+  padding-left: 21px;
+  font-size: 16px;
+  align-content: center;
+
+
+  
+}
