@@ -2,7 +2,7 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import ArrowButtons from "./ArrowButtons";
 import Box from "./Box";
-import "../category.css";
+import "./Category.css";
 
 export default function Category({ records, setTracks }) {
   const filterTracks = (genre) => {
