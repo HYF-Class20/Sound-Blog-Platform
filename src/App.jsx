@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import Category from "./components/Category/Category.jsx";
 import SoundList from "./components/SoundList/SoundList.jsx";
-import AudioPlayer from "./components/player/AudioPlayer.jsx ";
+import AudioPlayer from "./components/AudioPlayer/AudioPlayer.jsx";
 import NavigationBar from "./components/NavigationBar/NavigationBar.jsx";
 import axios from "axios";
 

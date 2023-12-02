@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
-import "../AudioPlayer.css";
-import BackwardIcon from "../assets/Backward.svg";
+import "../AudioPlayer/AudioPlayer.css";
+import BackwardIcon from "../src/assets/Backward.svg";
 import PlayIcon from "../assets/Play.svg";
 import PauseIcon from "../assets/Pause.svg";
 import ForwardIcon from "../assets/Forward.svg";
