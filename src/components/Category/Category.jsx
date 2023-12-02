@@ -1,39 +1,35 @@
-import { useState } from "react";
-import PropTypes from "prop-types";
-import ArrowButtons from "./ArrowButtons";
-import Box from "./Box";
-import "./Category.css";
+import { useState } from 'react';
+import PropTypes from 'prop-types';
+import ArrowButtons from '/src/components/Category/ArrowButtons.jsx';
+import Box from '/src/components/Category/Box.jsx';
+import '/src/components/Category/Category.css';
 
-export default function Category({ records, setTracks }) {
-  const filterTracks = (genre) => {
-    const filteredTracks = records.filter((record) => {
-      return record.genre === genre;
-    });
-    setTracks([...filteredTracks]);
-    return filteredTracks.length;
-  };
-
+const categories = [
+  'animals',
+  'food',
+  'meme',
+  'movie',
+  'music',
+  'nature',
+  'news',
+  'sport',
+];
+export default function Category({ setCategory }) {
   const [startImage, setStartImage] = useState(0);
   const [selectedImage, setSelectedImage] = useState(null);
-  const images = [
-    { src: "src/assets/animals.jpg", category: "animals" },
-    { src: "src/assets/food.jpg", category: "food" },
-    { src: "src/assets/meme.jpg", category: "meme" },
-    { src: "src/assets/movie.jpg", category: "movie" },
-    { src: "src/assets/music.jpg", category: "music" },
-    { src: "src/assets/nature.jpg", category: "nature" },
-    { src: "src/assets/news.jpg", category: "news" },
-    { src: "src/assets/sport.jpg", category: "sport" },
-  ];
+  const images = categories.map((category) => ({
+    src: `src/assets/${category}.jpg`,
+    category,
+  }));
   const totalImages = images.length;
 
   const handleArrowClick = (direction) => {
     const step = 4;
 
-    if (direction === "left") {
+    if (direction === 'left') {
       setStartImage((prevStartImage) => Math.max(0, prevStartImage - step));
       setSelectedImage(null);
-    } else if (direction === "right") {
+    } else if (direction === 'right') {
       setStartImage((prevStartImage) =>
         Math.min(totalImages - step, prevStartImage + step)
       );
@@ -43,13 +39,12 @@ export default function Category({ records, setTracks }) {
 
   const handleImageClick = (index) => {
     const displayedIndex = startImage + index;
-    const x = filterTracks(images[displayedIndex].category);
-    if (x > 0) {
-      setSelectedImage(images[displayedIndex].src);
-    }
+    setCategory(images[displayedIndex].category);
+    setSelectedImage(images[displayedIndex].src);
   };
 
   const handleBackClick = () => {
+    setCategory(null);
     setSelectedImage(null);
   };
 
@@ -83,14 +78,5 @@ export default function Category({ records, setTracks }) {
 }
 
 Category.propTypes = {
-  records: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number,
-      title: PropTypes.string,
-      genre: PropTypes.string,
-      src: PropTypes.string,
-      thumbnail: PropTypes.string,
-    })
-  ),
-  setTracks: PropTypes.func.isRequired,
+  setCategory: PropTypes.func.isRequired,
 };

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import './ArrowButtons.css';
+import '/src/components/Category/ArrowButtons.css';
 
 const ArrowButtons = ({onArrowClick}) => {
   return (

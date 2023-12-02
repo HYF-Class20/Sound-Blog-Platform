@@ -1,4 +1,4 @@
-import './Box.css';
+import '/src/components/Category/Box.css';
 import PropTypes from 'prop-types';
 
 
