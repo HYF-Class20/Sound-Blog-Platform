@@ -34,7 +34,7 @@ export default function App() {
 
       setTracks([...data]);
     } catch (error) {
-      console.error("Error fetching records:", error);
+      console.error("Error fetching records", error);
       return;
     }
   };
