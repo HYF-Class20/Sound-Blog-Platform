@@ -23,9 +23,12 @@ export default function App() {
     }
 
     try {
-      const response = await axios.get("http://localhost:5010/audio", {
-        params,
-      });
+      const response = await axios.get(
+        "http://localhost:5010/audio?offset=0&limit=100",
+        {
+          params,
+        }
+      );
       const data = response.data.result;
       response.request;
 
