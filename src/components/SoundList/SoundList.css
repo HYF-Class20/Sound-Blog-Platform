@@ -1,31 +1,35 @@
-
-
 .Sounds {
   font-family: Monstserrat, serif;
   color: #16139b;
   position: absolute;
-  font-weight: bold;
   top: 0.9rem;
-  left: 3.9rem;
+  left: 4.9rem;
 }
 
 .title {
   font-family: Monstserrat, serif;
   color: #16139b;
   font-weight: 600;
-  size: 14px;
+  font-size: 1.5vw;
   position: relative;
-  left: 5.4rem;
-  top: -1.3rem;
+  left: 6.4rem;
+  bottom: 1rem;
+}
+.sc-div {
+  margin-top: 10vh;
+  overflow-x: scroll;
+  height: 50vh;
+  width: 120vw;
 }
 
 Span {
   font-family: Monstserrat, serif;
   color: #16139b;
-  size: 14px;
-  padding: 1px;
+  font-weight: 700;
+  font-size: 1vw;
+  padding: 5px;
   position: relative;
-  left: 5.4rem;
+  left: 6.5vw;
   top: -2.3rem;
 }
 
@@ -33,6 +37,6 @@ Span {
   background-color: white !important;
 }
 
-  .bg-white{
-    border-radius: 20px;
-  }
+.bg-white {
+  border-radius: 20px;
+}

@@ -1,18 +1,18 @@
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import ArrowButtons from '/src/components/Category/ArrowButtons.jsx';
-import Box from '/src/components/Category/Box.jsx';
-import '/src/components/Category/Category.css';
+import { useState } from "react";
+import PropTypes from "prop-types";
+import ArrowButtons from "/src/components/Category/ArrowButtons.jsx";
+import Box from "/src/components/Category/Box.jsx";
+import "/src/components/Category/Category.css";
 
 const categories = [
-  'animals',
-  'food',
-  'meme',
-  'movie',
-  'music',
-  'nature',
-  'news',
-  'sport',
+  "animals",
+  "food",
+  "meme",
+  "movie",
+  "music",
+  "nature",
+  "news",
+  "sport",
 ];
 export default function Category({ setCategory }) {
   const [startImage, setStartImage] = useState(0);
@@ -26,10 +26,10 @@ export default function Category({ setCategory }) {
   const handleArrowClick = (direction) => {
     const step = 4;
 
-    if (direction === 'left') {
+    if (direction === "left") {
       setStartImage((prevStartImage) => Math.max(0, prevStartImage - step));
       setSelectedImage(null);
-    } else if (direction === 'right') {
+    } else if (direction === "right") {
       setStartImage((prevStartImage) =>
         Math.min(totalImages - step, prevStartImage + step)
       );
@@ -52,7 +52,7 @@ export default function Category({ setCategory }) {
     <>
       <div className="category-container">
         <div className="top-category">
-          <p>Category</p>
+          <h3 className="category-text">Category</h3>
           <ArrowButtons onArrowClick={handleArrowClick} />
         </div>
         <div className="bottom-category">

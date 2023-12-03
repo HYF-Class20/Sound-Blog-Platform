@@ -10,33 +10,26 @@ import "/src/components/SoundList/SoundList.css";
 export default function SoundList({ tracks, setTrack }) {
   return (
     <Container
-      className="bg-white position-absolute bg-opacity-25 d-flex p-5"
+      data-bs-spy="scroll"
+      className="bg-white position-absolute bg-opacity-25  d-flex "
       style={{
-        width: "57.6rem",
-       
-        left: "18rem",
-        top: "15rem",
-
+        top: "265px",
+        left: "290px",
+        height: "60vh",
+        width: "70vw",
+        margin: "0px",
       }}
     >
       <h2 className="Sounds">Sounds</h2>
-
-      <Row
-        md={2}
-        className="g-4"
-        style={{
-          width: "auto",
-          height: "15rem",
-        }}
-      >
+      <div className="sc-div">
         {tracks.map((item) => (
           <Col
-            className="position-relative g-3 bg-white  "
+            className="position-relative bg-white  "
             style={{
               top: "1rem",
-              left: "1.50rem",
-              width: "22rem",
-              height: "4.50rem",
+              left: "11vw",
+              width: "40vw",
+              height: "15vh",
             }}
             key={item.id}
           >
@@ -53,10 +46,10 @@ export default function SoundList({ tracks, setTrack }) {
                 className="position-absolute rounded-2 "
                 src={item.thumbnail}
                 style={{
-                  width: "5rem",
-                  height: "6.00rem",
-                  left: "-0.20rem",
-                  bottom: "0.05rem",
+                  width: "5.50vw",
+                  height: "100px",
+                  left: "0.05vw",
+                  top: "0.30vh",
                 }}
               />
               <Card.Body style={{ padding: "0.10px" }}>
@@ -65,13 +58,13 @@ export default function SoundList({ tracks, setTrack }) {
                     id="shareBtn"
                     href={item.src}
                     style={{
-                      padding: "1.10rem",
+                      padding: "4.10rem",
                       textAlign: "center",
-                      left: "18.50rem",
-                      top: "0.70rem",
+                      left: "36vw",
+                      top: "3.90rem",
                       backgroundImage: `url(${backgroundImage})`,
                       backgroundRepeat: "no-repeat",
-                      backgroundSize: "1.50rem",
+                      backgroundSize: "2.50rem",
                       filter: blur(30),
                     }}
                     target="_blank"
@@ -87,7 +80,7 @@ export default function SoundList({ tracks, setTrack }) {
             </Card>
           </Col>
         ))}
-      </Row>
+      </div>
     </Container>
   );
 }

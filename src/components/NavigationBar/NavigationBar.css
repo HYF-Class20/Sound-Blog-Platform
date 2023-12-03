@@ -4,8 +4,6 @@
   align-items: flex-start;
   width: 1600px;
   height: 900px;
-  
-  
 }
 
 .navBarContainer {
@@ -24,15 +22,12 @@
 }
 
 .nav-items-container {
-flex-direction: column !important;
-margin:0 !important;
-
+  flex-direction: column !important;
+  margin: 0 !important;
 }
 .nav-items-container img {
-  align-items:center !important;
-  }
-
-
+  align-items: center !important;
+}
 
 .nav-item-text {
   font-family: Montserrat, serif;
@@ -44,7 +39,9 @@ margin:0 !important;
 .nav-item-text:hover {
   background-color: #e4eefa;
   border: 0.5px solid #cfe0f4;
-  box-shadow: 0px 0.5px 1px #cfe0f4, 0px -0.4px 1px #cfe0f4;
+  box-shadow:
+    0px 0.5px 1px #cfe0f4,
+    0px -0.4px 1px #cfe0f4;
 }
 
 /*.menu-text {
@@ -59,8 +56,7 @@ margin:0 !important;
   font-size: 16px;
   color: #16139b;
   top: 0.2em;
-  left:7px;
-  
+  left: 7px;
 }
 
 .navbar > .container,
@@ -72,12 +68,11 @@ margin:0 !important;
 .navbar > .container-xxl {
   justify-content: flex-start !important;
   align-items: flex-start;
-    /* Your custom styles here */
+  /* Your custom styles here */
 }
 
 .bg-body-tertiary {
-  background-color: #E4EEFA !important;
-  width: 1313px !important;
+  background-color: #e4eefa !important;
+  width: 100% !important;
   height: 697px !important;
-
 }
