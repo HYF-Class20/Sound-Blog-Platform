@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import Category from "./components/category/category.jsx";
-import SoundList from "./components/SoundList/SoundList.jsx";
-import AudioPlayer from "./components/AudioPlayer/AudioPlayer.jsx";
-import SearchBar from "./components/searchBar/SearchBar.jsx";
-import NavigationBar from "./components/NavigationBar/NavigationBar.jsx";
+import Category from "/src/components/Category/Category.jsx";
+import SoundList from "/src/components/SoundList/SoundList.jsx";
+import AudioPlayer from "/src/components/AudioPlayer/AudioPlayer.jsx";
+import SearchBar from "/src/components/searchBar/SearchBar.jsx";
+import NavigationBar from "/src/components/NavigationBar/NavigationBar.jsx";
 import axios from "axios";
 
 export default function App() {

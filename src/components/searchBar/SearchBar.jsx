@@ -1,7 +1,6 @@
-
-import { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
-import '/src/components/SearchBar/SearchBar.css';
+import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
+import "/src/components/searchBar/SearchBar.css";
 
 export default function SearchBar({ setTitle }) {
   const [input, setInput] = useState(null);
