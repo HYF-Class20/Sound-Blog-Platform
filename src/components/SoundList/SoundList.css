@@ -1,31 +1,43 @@
 .Sounds {
-  font-family: Monstserrat, serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   color: #16139b;
   position: absolute;
-  top: 0.9rem;
-  left: 4.9rem;
+  top: 1.2rem;
+  left: 0.9rem;
 }
 
 .title {
-  font-family: Monstserrat, serif;
+  font-family: "Montserrat", sans-serif;
+  
   color: #16139b;
   font-weight: 600;
   font-size: 1.5vw;
   position: relative;
-  left: 6.4rem;
+  left: 5.4rem;
   bottom: 1rem;
+  
 }
 .sc-div {
-  margin-top: 10vh;
-  overflow-x: scroll;
-  height: 50vh;
-  width: 120vw;
+  margin-top: 8vh;
+  height: 45vh;
+  width: 74vw;
+  overflow-x:hidden;
+}
+
+.sc-div::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.sc-div::-webkit-scrollbar-thumb {
+  background-color: transparent;
 }
 
 Span {
-  font-family: Monstserrat, serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter ;
   color: #16139b;
-  font-weight: 700;
+  
   font-size: 1vw;
   padding: 5px;
   position: relative;
@@ -40,3 +52,13 @@ Span {
 .bg-white {
   border-radius: 20px;
 }
+
+.stop-scroll {
+  animation-play-state: paused;
+}
+
+  @keyframes scrollingAnimation {
+    to {
+      top: 100%;
+}
+  }

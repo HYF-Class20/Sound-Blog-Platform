@@ -27,12 +27,6 @@ function NavigationBar() {
               <span className="menu-item-text">Home</span>
             </div>
           </Nav.Link>
-          <Nav.Link className="nav-item-text" href="/home">
-            <div className="navbar-items-container">
-              <img src={addLogo} className="nav-item"></img>
-              <span className="menu-item-text">Add my sound</span>
-            </div>
-          </Nav.Link>
         </Nav>
       </Container>
     </Navbar>
