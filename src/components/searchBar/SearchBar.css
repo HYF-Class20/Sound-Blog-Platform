@@ -12,6 +12,10 @@
   
 }
 
+.input:focus{
+  color: #7371C3;
+}
+
 .search-bar {
   width: 638px;
   height: 44px;
@@ -27,4 +31,8 @@
 
 
   
+}
+
+.search-bar input:focus {
+  border-color:#7371C3 !important;
 }

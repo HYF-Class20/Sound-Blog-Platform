@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import Category from "/src/components/Category/category.jsx";
+import Category from "/src/components/Category/Category.jsx";
 import SoundList from "/src/components/SoundList/SoundList.jsx";
 import AudioPlayer from "/src/components/AudioPlayer/AudioPlayer.jsx";
 import SearchBar from "/src/components/searchBar/SearchBar.jsx";
 import NavigationBar from "/src/components/NavigationBar/NavigationBar.jsx";
 import axios from "axios";
+
 
 export default function App() {
   const [tracks, setTracks] = useState([]);

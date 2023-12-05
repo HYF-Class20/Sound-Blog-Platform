@@ -18,9 +18,10 @@ export default function Category({ setCategory }) {
   const [startImage, setStartImage] = useState(0);
   const [selectedImage, setSelectedImage] = useState(null);
   const images = categories.map((category) => ({
-    src: `src/assets/${category}.jpg`,
+    src: new URL(`/src/assets/${category}.jpg`, import.meta.url).href,
     category,
   }));
+  console.log(images);
   const totalImages = images.length;
 
   const handleArrowClick = (direction) => {

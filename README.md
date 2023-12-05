@@ -26,7 +26,8 @@ Users can share their sound stories on X (Sound-Blog-Plateform).
 
 Frontend: React js for a responsive user interface.
 
-Backend: Api built with node.js
+Backend: Api built with node.js 
+[Backend GitHub repo](https://github.com/inkeedo83/audios-backend)
 
 Database: Docker container
 
@@ -45,3 +46,22 @@ Audio Processing: Web Audio API or a third-party library for handling audio reco
 [Neha](https://github.com/Neha-2012)
 
 [Xin Lou](https://github.com/XinGITLou)
+
+
+## Following are the commands to install & start backend
+ 
+Cd audios-backend
+
+docker compose up -d
+
+npm install
+
+npm  start
+
+## Here is the our application 
+ 
+[Sound Blog](https://cheerful-blini-ea9feb.netlify.app/)
+
+
+## Screenshots 
+![Alt Text](src/assets/screenshot.png)

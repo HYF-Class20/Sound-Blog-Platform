@@ -2,8 +2,8 @@ import { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import "/src/components/AudioPlayer/AudioPlayer.css";
 import BackwardIcon from "/src/assets/Backward.svg";
-import PlayIcon from "/src/assets/Play.svg";
-import PauseIcon from "/src/assets/Pause.svg";
+import PlayIcon from "/src/assets/play.svg";
+import PauseIcon from "/src/assets/pause.svg";
 import ForwardIcon from "/src/assets/Forward.svg";
 
 export default function AudioPlayer({ track }) {
