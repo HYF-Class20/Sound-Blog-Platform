@@ -2,4 +2,10 @@
     font-family: 'Montserrat';
     src: local('Montserrat'), url(./fonts/Montserrat-Medium.ttf) format('truetype');
   }
+  html {
+   margin: 0;
+   padding: 0;
+   overflow: hidden; 
+  }
+  
   
