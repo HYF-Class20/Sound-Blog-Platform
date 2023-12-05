@@ -6,6 +6,7 @@ import SearchBar from "/src/components/searchBar/SearchBar.jsx";
 import NavigationBar from "/src/components/NavigationBar/NavigationBar.jsx";
 import axios from "axios";
 
+
 export default function App() {
   const [tracks, setTracks] = useState([]);
   const [track, setTrack] = useState(null);
@@ -34,7 +35,7 @@ export default function App() {
 
       setTracks([...data]);
     } catch (error) {
-      console.error("Error fetching records:", error);
+      console.error("Error fetching records", error);
       return;
     }
   };

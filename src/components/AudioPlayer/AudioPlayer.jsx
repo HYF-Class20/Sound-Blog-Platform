@@ -11,7 +11,8 @@ export default function AudioPlayer({ track }) {
     title: "Please select a track",
     genre: "from the sound list...",
     src: null,
-    thumbnail: "src/assets/logo.png",
+    thumbnail:
+      "https://sound-blog-app.netlify.app/assets/sound_logo-84521264.png",
   };
 
   const [isPlaying, setIsPlaying] = useState(false);
