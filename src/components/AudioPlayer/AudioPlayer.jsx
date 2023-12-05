@@ -11,14 +11,15 @@ export default function AudioPlayer({ track }) {
     title: "Please select a track",
     genre: "from the sound list...",
     src: null,
-    thumbnail: "src/assets/logo.png",
+    thumbnail:
+      "https://sound-blog-app.netlify.app/assets/sound_logo-84521264.png",
   };
 
   const [isPlaying, setIsPlaying] = useState(false);
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
 
-  const progressBarJumpValue = Number(1.23346890);
+  const progressBarJumpValue = Number(1.2334689);
 
   // references
   const audioPlayer = useRef(); // reference our audio component
@@ -36,7 +37,11 @@ export default function AudioPlayer({ track }) {
     const seconds = Math.floor(audioPlayer.current.duration);
     setDuration(seconds);
     progressBar.current.max = seconds;
-  }, [track, audioPlayer?.current?.loadedmetadata, audioPlayer?.current?.readyState]);
+  }, [
+    track,
+    audioPlayer?.current?.loadedmetadata,
+    audioPlayer?.current?.readyState,
+  ]);
 
   const calculateTime = (secs) => {
     const minutes = Math.floor(secs / 60);
@@ -94,11 +99,10 @@ export default function AudioPlayer({ track }) {
     <div className="audioPlayer">
       <div className="player-contents">
         <img src={thumbnail} alt={`${title} thumbnail`} />
-        
       </div>
       <div className="player-contents-text">
-      <h5>{title}</h5>
-      <p className='genre-player'>{genre}</p>
+        <h5>{title}</h5>
+        <p className="genre-player">{genre}</p>
       </div>
       <audio
         ref={audioPlayer}
@@ -110,7 +114,11 @@ export default function AudioPlayer({ track }) {
         <img src={BackwardIcon} alt="Backward" />
       </button>
       <button onClick={togglePlayPause} className="playPause">
-        {isPlaying ? <img src={PauseIcon} alt="Pause" /> : <img src={PlayIcon} alt="Play" />}
+        {isPlaying ? (
+          <img src={PauseIcon} alt="Pause" />
+        ) : (
+          <img src={PlayIcon} alt="Play" />
+        )}
       </button>
       <button className="forwardBackward" onClick={forwardThirty}>
         <img src={ForwardIcon} alt="Forward" />
