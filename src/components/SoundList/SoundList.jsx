@@ -41,7 +41,7 @@ export default function SoundList({ tracks, setTrack}) {
       data-bs-spy="scroll"
       className="bg-white position-absolute bg-opacity-25  d-flex "
       style={{
-        top: "237px",
+        top: "249px",
         left: "290px",
         height: "56.9vh",
         width: "77vw",

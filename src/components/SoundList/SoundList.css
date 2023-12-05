@@ -62,3 +62,26 @@ Span {
       top: 100%;
 }
   }
+
+  @media (max-width: 768px) {
+    .Sounds {
+      /* Adjust top and left for smaller screens */
+      top: 0.5rem;
+      left: 0.5rem;
+    }
+  
+    .title {
+      /* Adjust left and bottom for smaller screens */
+      left: 2.4rem;
+      bottom: 0.5rem;
+    }
+  
+    .sc-div {
+      /* Adjust margin-top, height, and width for smaller screens */
+      margin-top: 4vh;
+      height: 35vh;
+      width: 90vw;
+    }
+  
+    /* Additional adjustments... */
+  }

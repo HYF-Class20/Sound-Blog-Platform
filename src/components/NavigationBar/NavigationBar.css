@@ -2,10 +2,9 @@
 .navbar {
   flex-direction: column;
   align-items: flex-start;
-  width: 1600px;
-  height: 900px;
-  
-  
+  width: 100vw;
+  height: 53vw;
+  min-height: 130vw;
 }
 
 .navBarContainer {
@@ -29,6 +28,8 @@ margin:0 !important;
 
 
 }
+
+
 
 
 
@@ -89,7 +90,5 @@ margin:0 !important;
 
 .bg-body-tertiary {
   background-color: #E4EEFA !important;
-  width: 1313px !important;
-  height: 697px !important;
 
 }
