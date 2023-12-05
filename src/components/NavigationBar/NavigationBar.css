@@ -1,33 +1,43 @@
-/* Override Bootstrap styles for left-aligned and vertical navbar */
+
 .navbar {
   flex-direction: column;
   align-items: flex-start;
   width: 1600px;
   height: 900px;
+  
+  
 }
 
 .navBarContainer {
   margin-left: 10px;
-  width: 250px; /* Set a fixed width for the vertical navbar */
+  width: 250px; 
   background-color: #fff;
-  padding: 10px; /* Add padding for better spacing */
-  height: 100%; /* Adjusted height to fill the entire viewport height */
+  padding: 10px; 
+  height: 100%; 
   display: flex;
-  flex-direction: column; /* Set to column to align items vertically */
-  justify-content: flex-start; /* Align items to the top */
+  flex-direction: column; 
+  justify-content: flex-start; 
 }
 
 .navbar-brand {
-  margin-bottom: 20px; /* Add margin to the brand for separation */
+  margin-bottom: 20px; 
 }
 
 .nav-items-container {
-  flex-direction: column !important;
-  margin: 0 !important;
+flex-direction: column !important;
+margin:0 !important;
+
+
 }
+
+
+
+
 .nav-items-container img {
-  align-items: center !important;
-}
+  align-items:center !important;
+  }
+
+
 
 .nav-item-text {
   font-family: Montserrat, serif;
@@ -35,13 +45,18 @@
   color: #16139b;
   border: 0.5px solid white;
 }
+.nav-item-text-upload {
+  font-family: Montserrat, serif;
+  font-size: 16px;
+  color: #16139b;
+  border: 0.5px solid white;
+  visibility: hidden !important;
+}
 
 .nav-item-text:hover {
   background-color: #e4eefa;
   border: 0.5px solid #cfe0f4;
-  box-shadow:
-    0px 0.5px 1px #cfe0f4,
-    0px -0.4px 1px #cfe0f4;
+  box-shadow: 0px 0.5px 1px #cfe0f4, 0px -0.4px 1px #cfe0f4;
 }
 
 /*.menu-text {
@@ -56,7 +71,8 @@
   font-size: 16px;
   color: #16139b;
   top: 0.2em;
-  left: 7px;
+  left:7px;
+  
 }
 
 .navbar > .container,
@@ -68,11 +84,12 @@
 .navbar > .container-xxl {
   justify-content: flex-start !important;
   align-items: flex-start;
-  /* Your custom styles here */
+
 }
 
 .bg-body-tertiary {
-  background-color: #e4eefa !important;
-  width: 100% !important;
+  background-color: #E4EEFA !important;
+  width: 1313px !important;
   height: 697px !important;
+
 }

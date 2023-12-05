@@ -9,9 +9,9 @@
   left: 288px;
   border-radius: 20px;
 
-  width: 70vw;
+  width: 77vw;
   max-width: 1600px;
-  padding-right: 10px;
+
 }
 
 .top-category {
@@ -25,6 +25,7 @@
   font-weight: bold;
   line-height: 128%;
   padding-right: 10px;
+  padding-top: 1px;
 }
 
 .top-category p {
@@ -35,13 +36,15 @@
 
 .category-text {
   font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   margin-left: 1.5vw;
   color: #16139b;
+  margin-top: 0.31vw;
 }
 
 .bottom-category {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-end;
 }
