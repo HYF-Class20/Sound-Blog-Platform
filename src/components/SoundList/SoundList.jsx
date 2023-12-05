@@ -46,7 +46,6 @@ export default function SoundList({ tracks, setTrack}) {
         height: "56.9vh",
         width: "77vw",
         margin: "0px",
-        position: 'relative',
 
       }}
     >
