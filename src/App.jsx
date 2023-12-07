@@ -6,6 +6,7 @@ import SearchBar from "/src/components/searchBar/SearchBar.jsx";
 import NavigationBar from "/src/components/NavigationBar/NavigationBar.jsx";
 import axios from "axios";
 
+
 export default function App() {
   const [tracks, setTracks] = useState([]);
   const [track, setTrack] = useState(null);
@@ -24,7 +25,7 @@ export default function App() {
 
     try {
       const response = await axios.get(
-        "http://inkeedo83.fvds.ru/audio?offset=0&limit=100",
+        "http://localhost:5010/audio?offset=0&limit=100",
         {
           params,
         }
@@ -34,7 +35,7 @@ export default function App() {
 
       setTracks([...data]);
     } catch (error) {
-      console.error("Error fetching tracks", error);
+      console.error("Error fetching records", error);
       return;
     }
   };
